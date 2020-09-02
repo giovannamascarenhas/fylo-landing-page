@@ -68,6 +68,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 30px 0;
 }
 
@@ -88,6 +89,22 @@ nav ul li a {
     font-size: 0.9em;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.hamburguer i {
+    background-color: transparent;
+    border: 0;
+    color: hsl(243, 87%, 12%);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hamburguer:focus {
+    outline: none;
 }
 
 /* Form Section */
@@ -269,13 +286,26 @@ footer p a:hover {
     }
     
     nav {
-        flex-direction: column;
-        display: block;
         margin: 0 auto;
     }
 
+    .hamburguer {
+        display: block;
+    }
+
     nav img {
-        margin: 0 10px;
+        width: 40%;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+    }
+
+    #nav-ul.show {
+        display: flex;
+        flex-direction: column;
+        display: block;
     }
 
     nav ul li{
