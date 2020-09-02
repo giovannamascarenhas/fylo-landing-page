@@ -235,6 +235,19 @@ footer .circle {
     width: 40px;
 }
 
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #fff;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -257,6 +270,12 @@ footer .circle {
     
     nav {
         flex-direction: column;
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav img {
+        margin: 0 10px;
     }
 
     nav ul li{
